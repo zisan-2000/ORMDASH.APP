@@ -187,6 +187,6 @@
   }
 
   .newsfeed img {
-    @apply ml-44; /* 2XL screen size adjustments */
+    @apply ml-28; /* 2XL screen size adjustments */
   }
 }
