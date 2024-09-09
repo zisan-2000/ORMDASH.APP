@@ -1,0 +1,192 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar {
+  @apply fixed left-0 top-0 z-20 min-h-screen  bg-sky-900 p-4 transition-all duration-300 ease-in-out;
+  width: 18rem;
+}
+
+.sidebar.w-20 {
+  width: 5rem;
+}
+
+.logo {
+  @apply mb-6 mt-6 text-2xl font-bold text-white transition-all ease-in-out;
+}
+
+.menu-item {
+  @apply flex cursor-pointer items-center gap-4 p-4 text-lg text-white transition-all hover:bg-gray-700;
+}
+
+.upgrade-section {
+  @apply mt-auto p-2;
+}
+
+.upgrade-button {
+  @apply w-full rounded-md bg-orange-600 px-4 py-4 text-white transition-all ease-in-out;
+}
+
+.admin-section {
+  @apply fixed bottom-0 left-0 right-0 flex items-center gap-2 p-4 text-white transition-all ease-in-out;
+}
+
+.avatar {
+  @apply flex h-12 w-12 items-center justify-center rounded-full bg-green-500 text-white;
+}
+
+.main-content {
+  margin-left: 4rem;
+  @apply transition-all duration-300;
+}
+
+.header-content {
+  margin-left: 4rem;
+  @apply transition-all duration-300;
+}
+
+.all-content {
+  @apply p-8;
+}
+
+.news-content {
+  @apply p-20;
+}
+
+.welcome-text {
+  @apply text-3xl font-bold;
+}
+
+.description-text {
+  @apply mb-4 text-gray-600;
+}
+
+.task-item {
+  @apply mb-2 flex items-center justify-between rounded-md bg-white p-4 shadow-lg transition-colors;
+}
+
+.task-status {
+  @apply font-semibold text-green-500;
+}
+
+.card {
+  @apply flex h-auto w-full transform flex-col items-center rounded-lg border border-gray-300 p-6 text-center shadow-lg transition-all hover:-translate-y-5 hover:scale-105;
+}
+
+.card-button {
+  @apply mt-16 rounded-lg bg-transparent px-6 py-2 font-semibold text-orange-500 outline outline-orange-400 hover:bg-orange-600 hover:text-white;
+}
+
+.plan-card {
+  @apply grid gap-8;
+}
+
+.searchbar {
+  @apply flex items-center rounded-md bg-[#1B3A57] px-3 py-2;
+}
+
+/* Adjustments for NewsFeed responsiveness */
+.newsfeed {
+  @apply flex flex-col items-center justify-center;
+  min-height: calc(100vh - 5rem); /* Full screen minus header height */
+  padding: 2rem;
+}
+
+.newsfeed img {
+  @apply h-auto w-full max-w-xs; /* Image responsiveness */
+}
+
+@screen sm {
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-72;
+  }
+  .main-content {
+    margin-left: 5rem;
+  }
+  .plan-card {
+    @apply grid-cols-1;
+  }
+
+  .newsfeed {
+    @apply p-6;
+  }
+}
+
+@screen md {
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-72;
+  }
+  .main-content {
+    margin-left: 5rem;
+  }
+  .plan-card {
+    @apply grid-cols-2;
+  }
+
+  .newsfeed img {
+    @apply max-w-md; /* Medium screen size adjustments */
+  }
+}
+
+@screen lg {
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-72;
+  }
+  .main-content {
+    margin-left: 18rem;
+  }
+  .header-content {
+    margin-left: 16rem;
+  }
+  .menu-item {
+    @apply p-6;
+  }
+  .plan-card {
+    @apply grid-cols-2;
+  }
+  .newsfeed img {
+    @apply max-w-lg; /* Large screen size adjustments */
+  }
+
+  .header-content {
+    margin-left: 5rem;
+  }
+}
+
+@screen xl {
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-72;
+  }
+  .main-content {
+    margin-left: 24rem;
+  }
+  .header-content {
+    margin-left: 5rem;
+  }
+  .plan-card {
+    @apply grid-cols-3;
+  }
+  .newsfeed img {
+    @apply max-w-xl; /* Extra large screen size adjustments */
+  }
+}
+
+@screen 2xl {
+  .sidebar {
+    @apply fixed left-0 top-0 h-full w-72;
+  }
+
+  .main-content {
+    margin-left: 18rem;
+  }
+
+  .header-content {
+    margin-left: 5rem;
+  }
+
+  .newsfeed img {
+    @apply ml-44; /* 2XL screen size adjustments */
+  }
+}
