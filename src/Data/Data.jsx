@@ -5,7 +5,7 @@ export const menuItems = [
   { name: "Bundles", icon: "fas fa-layer-group", path: "/templates" },
   { name: "Collections", icon: "fas fa-bookmark", path: "/plans" },
   { name: "Bots & Alerts", icon: "fas fa-bolt", path: "/categories" },
-  { name: "Explore", icon: "fas fa-search", path: "/user" },
+  { name: "Explore", icon: "fas fa-search", path: "/plans" },
 ];
 
 export const planInfo = {
