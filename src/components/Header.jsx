@@ -3,7 +3,7 @@ import React from "react";
 const Header = ({ isSidebarOpen }) => {
   return (
     <div
-      className={` header-content sticky top-0 z-10 flex items-center justify-between bg-white p-4 shadow-md ${
+      className={` header-content  sticky top-0 z-10 flex items-center justify-between overflow-y-auto bg-white p-4 shadow-md ${
         !isSidebarOpen ? "collapsed" : ""
       }`}
     >

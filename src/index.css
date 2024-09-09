@@ -190,3 +190,24 @@
     @apply ml-28; /* 2XL screen size adjustments */
   }
 }
+
+/* scrollbar */
+.scrollbar {
+  @apply max-h-[350px] overflow-y-auto pr-4;
+}
+
+.scrollbar::-webkit-scrollbar {
+  @apply w-2; /* Width of the scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  @apply bg-gray-200; /* Track color */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-teal-300; /* Thumb (the draggable part) */
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-green-600; /* Thumb color on hover */
+}

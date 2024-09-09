@@ -15,7 +15,11 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`sidebar ${isOpen ? "w-64" : "w-20"} overflow-y-auto`}>
+    <div
+      className={`sidebar scrollbar ${
+        isOpen ? "w-64" : "w-20"
+      } overflow-y-auto`}
+    >
       <div className="flex items-center justify-between">
         <SidebarLogo isOpen={isOpen} />
         <button onClick={toggleSidebar} className="p-2 text-white">
